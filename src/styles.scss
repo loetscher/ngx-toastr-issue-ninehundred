@@ -1,2 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~ngx-toastr/toastr';
+@import '~ag-grid-community/src/styles/ag-grid';
+@import '~ag-grid-community/src/styles/ag-theme-balham/sass/ag-theme-balham-mixin';
+
+.ag-theme-balham {
+  //if this include is removed everything works
+  @include ag-theme-balham(
+        (
+          // some variable declaration here...
+        )
+  );
+}
+// if toaster styles are imported here, everything works (uncomment the code to check)
+//@import '~ngx-toastr/toastr';
